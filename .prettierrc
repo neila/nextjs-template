@@ -1,8 +1,10 @@
 {
+    "arrowParens": "always",
     "trailingComma": "all",
-    "tabWidth": 2,
+    "tabWidth": 4,
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "printWidth": 100
+    "printWidth": 100,
+    "tailwindConfig": "./tailwind.config.js"
 }

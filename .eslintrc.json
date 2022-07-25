@@ -1,18 +1,13 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:import/recommended",
-    "plugin:import/warnings",
-    "prettier"
-  ],
-  "rules": {
-    "import/order": [
-      "error",
-      {
-        "alphabetize": {
-          "order": "asc"
-        }
-      }
-    ]
-  }
+    "extends": ["eslint:recommended", "next", "prettier"],
+    "rules": {
+        "import/order": [
+            "error",
+            {
+                "alphabetize": {
+                    "order": "asc"
+                }
+            }
+        ]
+    }
 }
