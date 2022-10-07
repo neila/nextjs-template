@@ -1,13 +1,13 @@
 {
-    "extends": ["eslint:recommended", "next", "prettier"],
-    "rules": {
-        "import/order": [
-            "error",
-            {
-                "alphabetize": {
-                    "order": "asc"
-                }
-            }
-        ]
-    }
+  "extends": ["eslint:recommended", "next", "prettier"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  }
 }
