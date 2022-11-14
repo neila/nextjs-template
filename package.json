@@ -1,33 +1,50 @@
 {
-  "name": "upt_controller",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-boilerplate",
+  "version": "0.2.0",
+  "description": "Nextjs bootstrap",
+  "main": "pages/_app.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neila/nextjs-template.git"
+  },
+  "author": "SHØ <neila@users.noreply.github.com> (https://akxra.art/)",
+  "contributors": [
+    "SHØ <neila@users.noreply.github.com> (https://akxra.art/)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neila/nextjs-template/issues"
+  },
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.8",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "autoprefixer": "^10.4.13",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.19",
+    "rome": "^10.0.1",
+    "simple-git-hooks": "^2.8.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.8.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix --dir src",
-    "prettier:check": "prettier --check --ignore-path .gitignore './**/**/*.{js,jsx,ts,tsx,json}'",
-    "prettier:format": "prettier --write --ignore-path .gitignore './**/**/*.{js,jsx,ts,tsx,json}'"
-  },
-  "dependencies": {
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "17.0.38",
-    "@types/react": "18.0.10",
-    "@types/react-dom": "18.0.5",
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6",
-    "eslint-config-prettier": "^8.5.0",
-    "postcss": "^8.4.14",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.12",
-    "tailwindcss": "^3.0.24",
-    "typescript": "4.7.2"
-  },
-  "packageManager": "yarn@3.0.0"
+    "lint": "yarn run rome check .",
+    "lint:fix": "yarn run rome check . --apply",
+    "format": "yarn run rome format .",
+    "format:fix": "yarn run rome format . --write"
+  }
 }
