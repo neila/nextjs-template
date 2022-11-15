@@ -2,7 +2,7 @@
   "name": "nextjs-boilerplate",
   "version": "0.2.0",
   "description": "Nextjs bootstrap",
-  "main": "pages/_app.tsx",
+  "main": "app/layout.tsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neila/nextjs-template.git"
