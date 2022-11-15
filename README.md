@@ -11,4 +11,5 @@
 
 ```zsh
 yarn install
+yarn simple-git-hooks
 ```
